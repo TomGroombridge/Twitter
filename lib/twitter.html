@@ -3,13 +3,14 @@
 		<title> Twitter Page </title>
 		<!-- <link rel="stylesheet" type="text/css" href="lib/twitter.css">
 		<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap-theme.css"> -->
+		<link rel="stylesheet" type="text/css" href="../public/js/bootstrap.min.js">
 		<link rel="stylesheet" type="text/css" href="../public/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="twitter.css">
 	</head>
 	
-	<body>
+	<body background= "../public/images/background.jpg">
 		<nav class="navbar navbar-inverse" role="navigation">
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
+			<div class="navbar-collapse collapse"> 
 				
 				<ul class="nav navbar-nav">
 
@@ -51,12 +52,15 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-wrench"></span> <b class="caret"></b>
 						</a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Edit Profile</a></li>
-								<li><a href="#">Lists</a></li>
-								<li><a href="#">Help</a></li>
-								<li><a href="#">Keyboard Shortcuts</a></li>
-								<li><a href="#">Settings</a></li>
-								<li><a href="#">Sign Out</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit profile</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lists</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Helps</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Keyboard shortcuts</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sign out</a></li>
 							</ul>
 					</li>
 
@@ -82,37 +86,81 @@
 				$('.dropdown-toggle').dropdown();
 			})
 			</script>
-	</body>
+
+
+		<div class="panel panel-default mini-profile">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading"><a href="#">Tom Groombridge</a>
+		  <br> view profile</br>
+		  </div>
+		  <table class="table table-bordered">
+	  			<thead> 
+	  				<tr>
+							<th>Tweets</th>
+							<th>Following</th>
+							<th>Followers</th>	  				
+	  				</tr>
+	  			</thead>
+	  			<tbody>
+	  				<tr>
+	  					<td> 456 </td>
+	  					<td> 678 </td>
+	  					<td> 789 </td>
+						</tr>
+					</tbody>
+			</table>
+					<div class="form group">
+						<input type="text" class="form-control" placeholder="compose new tweet...">
+					</div>
+		</div>
+
+			<div class="jumbotron mini-profile2">
+			<h5>who to follow</h5>
+			<ul class="media-list media-list2">
+			  <li class="media">
+			    <a class="pull-left" href="#">
+			      <img class="media-object" src="../public/images/ken.png" alt="..." style="width: 48px; height: 48px;">
+			    </a>
+			    <div class="media-body">
+			      <b class="media-heading2"><a href ="#">Kennerdeigh Scot</a></b>
+			      <b class="username">@kenmasco</b>
+			    </div>
+			  </li>
+
+			  <li class="media">
+			  	<a class="pull-left" href="#">
+			  		<img class="media-object" src="../public/images/gerogie.png" alt="..." style="width: 48px; height: 48px;">
+			  	</a>
+			  	<div class="media-body">
+			  		<b class="media-heading2"><a href="#">Georgio</a></b> 
+			  		<b class="username">@ggeorgiev</b>
+			  	</div>
+			  </li>
+			</ul>
+		</div>
+
+
+
+			<div class="list-group trends" >
+			  <a href="#" class="list-group-item active">
+			    trends
+			  </a>
+			  <a href="#" class="list-group-item">#MakersAcademy</a>
+			  <a href="#" class="list-group-item">#Coding</a>
+			  <a href="#" class="list-group-item">#Ruby</a>
+			  <a href="#" class="list-group-item">#Evgeny</a>
+			  <a href="#" class="list-group-item">#Alex</a>
+			  <a href="#" class="list-group-item">#Stephen</a>
+			  <a href="#" class="list-group-item">#Enrique</a>
+			  <a href="#" class="list-group-item">#Georgie</a>
+			  <a href="#" class="list-group-item">#Tom</a>
+			  <a href="#" class="list-group-item">#Chris	</a>
+			</div>
+				
+				
+			
+
 </html>
 
 
-<!-- 			<button type="button" class="btn btn-default navbar-btn">
-			<span class="glyphicon glyphicon-home"></span> Home</button>
 
-			<button type="button" class="btn btn-default navbar-btn">
-			<span class="glyphicon glyphicon-paperclip"></span> Connect</button>
-
-
-			<button type="button" class="btn btn-default navbar-btn">
-			<span class="glyphicon glyphicon-certificate"></span> Discover</button>
-			
-			<button type="button" class="btn btn-default navbar-btn">
-			<span class="glyphicon glyphicon-user"></span> User</button>
-
-			<button type="button" class="btn btn-default navbar-btn">
-			<span class="glyphicon glyphicon-comment"></span></button>
-
-
-			<button type="button" class="btn btn-default navbar-btn">
-			<span class="glyphicon glyphicon-wrench"></span></button>			
-
-			<button type="button" class="btn btn-default navbar-btn">
-			<span class="glyphicon glyphicon-edit"></span></button>
-
-			<form class="navbar-form navbar-left" role='search'>
-				
-				<div class="form-group">
-					<input type="text" class="form-control tom-bar" placeholder="Search">
-				</div>
-
-			</form> -->
