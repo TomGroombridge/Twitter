@@ -2,13 +2,13 @@
 	position: fixed;
 	right: 60%;
 	width: 24%;
-	top: 10%;
+	
 }
 
 .mini-profile2{
 	border-radius: 5px;
 	position: fixed;
-	top: 37%;
+	top: 260px;
 	right: 60%;
 	width: 24%;
 	padding-top: 0px;
@@ -34,7 +34,7 @@
 	border-radius: 5px;
 	position: fixed;
 	font-size: 12px;
-	top: 63%;
+	top: 450px;
 	right: 60%;
 	width: 24%;
 	padding-top: 0px;
@@ -70,6 +70,11 @@
    border-bottom: 1	px solid #ffffff;
 }
 
-.reply {
-	 
+.modal-footer-left{
+	position: fixed;
+	padding: 0px;	
+	
 }
+
+
+

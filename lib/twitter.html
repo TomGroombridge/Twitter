@@ -63,21 +63,40 @@
 							</ul>
 					</li>
 					<li>
-						<a href="#">
-						<span class="glyphicon glyphicon-edit"></span></a>
+						<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+									<span class="glyphicon glyphicon-edit"></span>						        
+						</button>	
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						        <h4 class="modal-title" id="myModalLabel">Compose Tweet</h4>
+						      </div>
+						      <div class="modal-body">
+						        <textarea type="text" class="form-control" placeholder="compose new tweet..." rows="3"></textarea>
+						      </div>
+						      <div class="modal-footer">
+						      	<div class="modal-footer-left">
+						      		<div class="btn btn-default" type="button">
+						      			<span class="glyphicon glyphicon-camera"></span>
+						      		</div>
+						      		<div class="btn btn-default" type="button">
+						      			<span class="glyphicon glyphicon-flag"></span>
+						      		</div>
+						      	</div>
+						        <button type="button" class="btn btn-primary">Tweet</button>
+						      </div>
+						    </div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+								
 					</li>
 				</ul>
 				</div>
 			
 		</nav>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script src="../public/bootstrap/js/bootstrap.min.js"></script>
-			<script>
-			$(document).ready(function(){
-				$('.dropdown-toggle').dropdown();
-			})
-			</script>
 
 
 		<div class="panel panel-default mini-profile">
@@ -249,6 +268,15 @@
   				<div class="hr"></div>
 				</ul>
 			</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="../public/bootstrap/js/bootstrap.min.js"></script>
+			<script>
+			$(document).ready(function(){
+				$('.dropdown-toggle').dropdown();
+			})
+			</script>
+
 
 </html>
 
