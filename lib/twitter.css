@@ -87,5 +87,12 @@
   cursor: pointer;
 }
 
-
+.my-tweets {
+	border-radius: 5px;
+	position: fixed;
+	left: 45%;
+	width: 40%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 

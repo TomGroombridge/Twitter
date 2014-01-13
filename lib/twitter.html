@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="../public/js/bootstrap.min.js">
 		<link rel="stylesheet" type="text/css" href="../public/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="twitter.css">
-		<script src="http://code.jquery.com/jquery-1.5.js"></script>
+
 	</head>
 	
 	<body background= "../public/images/background.jpg">
@@ -34,8 +34,8 @@
 						<span class="glyphicon glyphicon-certificate"></span> Discover</a>
 					</li>
 					<li>	
-						<a href="#"> 
-						<span class="glyphicon glyphicon-user"></span> Me</a>
+						 <a href="#">
+						 <span class="glyphicon glyphicon-user"></span> Me</li></a>
 					</li>
 				</ul>
 				<form class="navbar-form navbar-left" role="search">
@@ -92,17 +92,7 @@
 						      </div>
 						    </div><!-- /.modal-content -->
 						  </div><!-- /.modal-dialog -->
-						</div><!-- /.modal -->
-							    <script>
-							      function countChar(val) {
-							        var len = val.value.length;
-							        if (len >= 140) {
-							          val.value = val.value.substring(0, 140);
-							        } else {
-							          $('#charNum').text(140 - len);
-							        }
-							      };
-							    </script>				
+						</div><!-- /.modal -->		
 					</li>
 				</ul>
 				</div>
@@ -283,12 +273,12 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="../public/bootstrap/js/bootstrap.min.js"></script>
-			<script>
-			$(document).ready(function(){
-				$('.dropdown-toggle').dropdown();
-			})
-			</script>
+		<script src="http://code.jquery.com/jquery-1.5.js"></script>
+		<script src="twitter.js"></script>
 
+		<div class="my-tweets">
+			<a class="twitter-timeline" href="https://twitter.com/TomGroombridge" data-widget-id="422533180147519488">Tweets by @TomGroombridge</a>
+		</div>
 
 </html>
 
